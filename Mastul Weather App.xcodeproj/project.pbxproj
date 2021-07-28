@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		87E250A126A6104100ED26F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E250A026A6104100ED26F9 /* AppDelegate.swift */; };
 		87E250A326A6104100ED26F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E250A226A6104100ED26F9 /* SceneDelegate.swift */; };
-		87E250A526A6104100ED26F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E250A426A6104100ED26F9 /* ViewController.swift */; };
+		87E250A526A6104100ED26F9 /* MastulViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E250A426A6104100ED26F9 /* MastulViewController.swift */; };
 		87E250A826A6104100ED26F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87E250A626A6104100ED26F9 /* Main.storyboard */; };
 		87E250AA26A6104500ED26F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87E250A926A6104500ED26F9 /* Assets.xcassets */; };
 		87E250AD26A6104500ED26F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87E250AB26A6104500ED26F9 /* LaunchScreen.storyboard */; };
+		87E250B726A612A200ED26F9 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E250B626A612A200ED26F9 /* WeatherModel.swift */; };
+		87F8D1B526A7344700DC0AFB /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F8D1B426A7344700DC0AFB /* WeatherManager.swift */; };
+		87F8D1B726A7347800DC0AFB /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F8D1B626A7347800DC0AFB /* WeatherData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		87E2509D26A6104100ED26F9 /* Mastul Weather App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mastul Weather App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E250A026A6104100ED26F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87E250A226A6104100ED26F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		87E250A426A6104100ED26F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		87E250A426A6104100ED26F9 /* MastulViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastulViewController.swift; sourceTree = "<group>"; };
 		87E250A726A6104100ED26F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87E250A926A6104500ED26F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87E250AC26A6104500ED26F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87E250AE26A6104500ED26F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87E250B626A612A200ED26F9 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		87F8D1B426A7344700DC0AFB /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		87F8D1B626A7347800DC0AFB /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,40 @@
 			children = (
 				87E250A026A6104100ED26F9 /* AppDelegate.swift */,
 				87E250A226A6104100ED26F9 /* SceneDelegate.swift */,
-				87E250A426A6104100ED26F9 /* ViewController.swift */,
-				87E250A626A6104100ED26F9 /* Main.storyboard */,
+				87E250B826A612AF00ED26F9 /* Model */,
+				87E250B426A6120500ED26F9 /* View */,
+				87E250B526A6123F00ED26F9 /* Controller */,
 				87E250A926A6104500ED26F9 /* Assets.xcassets */,
 				87E250AB26A6104500ED26F9 /* LaunchScreen.storyboard */,
 				87E250AE26A6104500ED26F9 /* Info.plist */,
 			);
 			path = "Mastul Weather App";
+			sourceTree = "<group>";
+		};
+		87E250B426A6120500ED26F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				87E250A626A6104100ED26F9 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		87E250B526A6123F00ED26F9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				87E250A426A6104100ED26F9 /* MastulViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		87E250B826A612AF00ED26F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				87E250B626A612A200ED26F9 /* WeatherModel.swift */,
+				87F8D1B426A7344700DC0AFB /* WeatherManager.swift */,
+				87F8D1B626A7347800DC0AFB /* WeatherData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87E250A526A6104100ED26F9 /* ViewController.swift in Sources */,
+				87E250A526A6104100ED26F9 /* MastulViewController.swift in Sources */,
 				87E250A126A6104100ED26F9 /* AppDelegate.swift in Sources */,
+				87F8D1B526A7344700DC0AFB /* WeatherManager.swift in Sources */,
+				87E250B726A612A200ED26F9 /* WeatherModel.swift in Sources */,
+				87F8D1B726A7347800DC0AFB /* WeatherData.swift in Sources */,
 				87E250A326A6104100ED26F9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
